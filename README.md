@@ -6,8 +6,6 @@ Trường Đại học Công nghê thông tin
 
 Lớp: CS114.M11
 
-facebook: https://www.facebook.com/LocLinh0501
-
 ## Các hoạt động
 
 ### Q1.1 - Tự giới thiệu
@@ -23,8 +21,8 @@ facebook: https://www.facebook.com/LocLinh0501
 #### THÀNH VIÊN NHÓM 
 | STT |   MSSV   |   Vai Trò   |      Họ và Tên      |          Email         |
 |:---:|:--------:|:-----------:|:-------------------:|:----------------------:|
-| 1   | 19522571 | Nhóm trưởng | Huỳnh Phạm Việt Pháp| 19522571@gm.uit.edu.vn |
-| 2   | 19521754 | Thành viên  | Nguyễn Lộc Linh     | 19521754@gm.uit.edu.vn |
+| 1   | 19521754 | Nhóm trưởng | Nguyễn Lộc Linh     | 19521754@gm.uit.edu.vn |
+| 2   | 19522571 | Thành viên  | Huỳnh Phạm Việt Pháp| 19522571@gm.uit.edu.vn |
 | 3   | 19522449 | Thành viên  | Hoàng Anh Tú        | 19522449@gm.uit.edu.vn |
 
 ### Q2.1 - Tạo github
