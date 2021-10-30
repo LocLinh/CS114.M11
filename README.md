@@ -3,7 +3,7 @@ Trường Đại học Công nghệ Thông tin - UIT
 
 Họ và Tên: Nguyễn Lộc Linh
 
-Giảng viên: Lê Đình Duy và Nguyễn Trương Trường An
+Giảng viên: Lê Đình Duy và Phạm Nguyễn Trường An
 
 Lớp: CS114.M11
 
