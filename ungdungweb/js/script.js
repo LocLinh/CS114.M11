@@ -58,16 +58,19 @@ function get_class_name(n = 1, array) {
 }
 
 async function myFirstTfjs() {
-  const model = await tf.loadLayersModel("../model/tfjs_model/model.json");
-  // model.summary();
-  // addGallery();
+  // const model = await tf.loadLayersModel("../model/xception_saved_model/model.json");
+  // // model.summary();
+  // // addGallery();
+
+  modelName = String(document.getElementById("models").value);
+  const model = await tf.loadLayersModel(`../model/${modelName}_saved_model/model.json`);
 
   // read images
   var getDivId = document.getElementById("imagesContainer");
   var images = getDivId.getElementsByTagName("img");
   for (var i = 0; i < images.length; i++) {
     let image = images[i];
-    let image = document.getElementById("display_image");
+    //let image = document.getElementById("display_image");
 
     let img = tf.browser.fromPixels(image);
     let normalizationOffset = tf.scalar(255 / 2); // 127.5
