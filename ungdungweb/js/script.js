@@ -98,7 +98,9 @@ async function myFirstTfjs() {
     <img style="max-width:300px; max-height: 300px; border-radius:1rem" src='${image.src}'>
     <span class="img-label">${predictions_name[0].class_name}</span>
     </div>`);
+    $("#python-ngu").append(`${largestIndex(1, predictions)[0][0]},`);
   }
+ 
 
   // let image = document.getElementById("display_image");
   // let img = tf.browser.fromPixels(image);
