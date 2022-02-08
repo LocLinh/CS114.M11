@@ -58,10 +58,9 @@ function get_class_name(n = 1, array) {
 }
 
 async function myFirstTfjs() {
-
   modelName = String(document.getElementById("models").value);
   const model = await tf.loadLayersModel(`../model/${modelName}_saved_model/model.json`);
-
+  console.log(model);
   // read images
   var getDivId = document.getElementById("imagesContainer");
   var images = getDivId.getElementsByTagName("img");
@@ -132,6 +131,4 @@ function readImages() {
 document.getElementById("run_pred_btn").onclick = function () {
   $("#result_info").empty();
   myFirstTfjs();
-
-  
 };
