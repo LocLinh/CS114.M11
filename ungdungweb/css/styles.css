@@ -132,3 +132,6 @@ img {
 *::-webkit-scrollbar-thumb {
   background: #e2173d;
 }
+.select_option {
+  padding: 10px;
+}

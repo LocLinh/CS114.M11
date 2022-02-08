@@ -58,9 +58,6 @@ function get_class_name(n = 1, array) {
 }
 
 async function myFirstTfjs() {
-  // const model = await tf.loadLayersModel("../model/xception_saved_model/model.json");
-  // // model.summary();
-  // // addGallery();
 
   modelName = String(document.getElementById("models").value);
   const model = await tf.loadLayersModel(`../model/${modelName}_saved_model/model.json`);
@@ -98,43 +95,9 @@ async function myFirstTfjs() {
     <img style="max-width:300px; max-height: 300px; border-radius:1rem" src='${image.src}'>
     <span class="img-label">${predictions_name[0].class_name}</span>
     </div>`);
-    $("#python-ngu").append(`${largestIndex(1, predictions)[0][0]},`);
+    // $("#python-ngu").append(`${largestIndex(1, predictions)[0][0]},`);
   }
- 
-
-  // let image = document.getElementById("display_image");
-  // let img = tf.browser.fromPixels(image);
-  // let normalizationOffset = tf.scalar(255 / 2); // 127.5
-  // let tensor = img
-  //     .resizeNearestNeighbor([224, 224])
-  //     .toFloat()
-  //     .sub(normalizationOffset)
-  //     .div(normalizationOffset)
-  //     .reverse(2)
-  //     .expandDims();
-
-  // // 2. Predict
-  // let predictions = await model.predict(tensor);
-  // predictions = predictions.dataSync();
-
-  // let num_pred = 3;
-  // var predictions_name = get_class_name(num_pred, largestIndex(num_pred, predictions));
-  // // console.log(predictions);
-  // console.log(predictions_name);
-
-  // // hiện kết quả
-  // $("#result_info").empty();
-
-  // // hiện chỉ một kết quả
-  // $("#result_info").append(`<li>${predictions_name[0].class_name}</li>`);
-
-  // hiện nhiều kết quả
-  // predictions_name.forEach(function(label) {
-  //     $("#result_info").append(`<li>${label.class_name}: ${label.probability.toFixed(5)}</li>`);
-  // });
-
-  // return model;
-}
+} 
 
 $(function () {
   $("#fileinput").change(function () {
@@ -165,28 +128,10 @@ function readImages() {
   }
 }
 
-// $("#fileinput").change(function() {
-//     let reader = new FileReader();
-//     reader.onload = function() {
-//         let dataURL = reader.result;
-
-//         $("#display_image").attr("src", dataURL);
-//         $("#result_info").empty();
-//     }
-
-//     let file = $("#fileinput").prop("files")[0];
-//     reader.readAsDataURL(file);
-// });
-
-// container = document.getElementById("imagesContainer");
-
-// function createImages(item, index) {
-//     container.innerHTML = container.innerHTML + "<img src=\"" + baseUrl + item + "\"/><br/>";
-// }
 
 document.getElementById("run_pred_btn").onclick = function () {
   $("#result_info").empty();
   myFirstTfjs();
 
-  // predict(my_model);
+  
 };

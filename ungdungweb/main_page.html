@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>predict images' topic</title>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
 
-<body>
-    <form action="" method="POST" enctype="multipart/form-data" id='form'>
-        <label for="files">Select files:</label>
-        <input type="file" name="files" id="fileinput" accept="image/*" multiple>
+  <body>
+    <form action="" method="POST" enctype="multipart/form-data" id="form">
+      <label for="files">Select files:</label>
+      <input
+        type="file"
+        name="files"
+        id="fileinput"
+        accept="image/*"
+        multiple
+      />
     </form>
     <div id="imagesContainer"></div>
 
     <img style="max-width:300px; border-radius:1rem" src="images/Default_Image_Thumbnail.png" alt="Image" id="display_image">
     <br>
-    <div style="display: block">
+    <div style="display: block" class="select_option">
         <label for="models">Choose a model:</label>
         <select name="models" id="models">
           <option value="vgg16" selected>VGG16</option>
@@ -31,9 +36,7 @@
     <button class='glow-on-hover' id="run_pred_btn">Xem kết quả</button>
     <div id="result_info">
     </div>
-    <div id="python-ngu"></div>
 </body>
 
-<script src="js/script.js"></script>
-
+  <script src="js/script.js"></script>
 </html>
