@@ -1,6 +1,9 @@
 ### Link github
 https://github.com/LocLinh/CS114.M11
 
+### Link dataset
+https://drive.google.com/drive/folders/14WiDYoy7RS7s11MnaXZiGkzaXPuDY-D7?usp=sharing
+
 ## 1. Thu thập dữ liệu
    
 Dữ liệu của nhóm phần lớn là ảnh chụp từ điện thoại và một phần từ Internet. Dữ liệu được phân chia thành 21 chủ đề khác nhau: Áo quần, bầu trời, bìa sách, biển, cây cối, ảnh chụp màn hình, điện thoại, đồ ăn, đồi núi, giày, hoa, hoá đơn, sông suối hồ, tài liệu, tòa nhà, xe cộ, người, selfie, đồng ruộng, đường phố và thú cưng. 
